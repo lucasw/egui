@@ -1,9 +1,11 @@
-mod color_test;
-mod demo;
-mod fractal_clock;
+pub mod color_test;
+pub mod demo;
+pub mod fractal_clock;
 #[cfg(feature = "http")]
 mod http_app;
+pub mod node_graph;
 
+// TODO: remove
 pub use color_test::ColorTest;
 pub use demo::DemoApp;
 pub use fractal_clock::FractalClock;
